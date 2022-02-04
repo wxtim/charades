@@ -1,5 +1,8 @@
 # charades
 
+A simple Charades game written in Vue.js as a learning excercise for
+Vue and JavaScript.
+
 ## Project setup
 ```
 yarn install
