@@ -25,3 +25,15 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+# What I've learned
+
+- JS array concatenation
+- How to pull in JSON files
+    - TODO explore reqire vs. the other method
+- Using Vue CLI to create a project
+- How to create new Vue Components from scratch
+- How to register Vue Components
+- How to pass data from one component to another
+- How to create tests for my code

@@ -1,18 +1,19 @@
 <template>
   <div id="app">
-    <HelloWorld />
+    <h1>Tim's Charades Games</h1>
+    <Menu />
     <Charades />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import Charades from './components/Charades.vue'
+import Menu from './components/Menu.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    Menu,
     Charades
   }
 }
