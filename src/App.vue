@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <h1>Tim's Charades Games</h1>
     <Menu />
     <Charades />
   </div>

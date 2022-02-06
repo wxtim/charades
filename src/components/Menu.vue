@@ -1,29 +1,16 @@
 <template>
-  <div class="charades">
-    <button v-on:click="get_charade">Get a new Charade</button>
-    <p>
-    {{verb}} {{noun}}
-    </p>
+  <div class="menu">
+
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Charades',
+  name: 'menu',
   data: function() {
     return {
-      verb: 'Charade: ',
-      noun: '',
-      films: require('../assets/films.json'),
-      books: require('../assets/books.json')
     }
   },
-  methods: {
-    get_charade: function() {
-      const nouns = this.films.concat(this.books)
-      this.noun = nouns[Math.floor(Math.random() * nouns.length)]
-    }
-  }
 }
 </script>
 

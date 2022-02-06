@@ -1,9 +1,6 @@
 <template>
-  <div class="charades">
-    <button v-on:click="get_charade">Get a new Charade</button>
-    <p>
-    {{verb}} {{noun}}
-    </p>
+  <div class="charades" v-on:click="get_charade">
+    <b>{{verb}}</b><br>{{noun}}
   </div>
 </template>
 
@@ -12,7 +9,7 @@ export default {
   name: 'Charades',
   data: function() {
     return {
-      verb: 'Charade: ',
+      verb: 'Click to pick a card',
       noun: '',
       films: require('../assets/films.json'),
       books: require('../assets/books.json')
@@ -45,5 +42,17 @@ li {
 }
 a {
   color: #42b983;
+}
+.charades {
+  background-color: #FF7;
+  height: 350px;
+  width: 250px;
+  border-radius: 20px;
+  display: table-cell;
+  vertical-align: middle;
+  border-width: 10px;
+  border-color: #FF8E66;
+  border-style: double;
+  font-size: 1.5em;
 }
 </style>
